@@ -11,7 +11,7 @@ namespace Nominatim.Models
         public Status Status { get; set; }
         public string? ErrorMessage { get; set; }
 
-        public ApiResponseModel ApiResponse { get; set; }
+        public List<ApiResponseModel> ApiResponse { get; set; }
     }
 
     public enum Status

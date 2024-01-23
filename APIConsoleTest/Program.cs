@@ -8,10 +8,9 @@ HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 var client = new NominatimClient();
 var response = await client.SearchAsync(new Nominatim.Models.StructuredQuerySearchModel
 {
-    City = "Oldenburg",
-    Country = "Deutschland",
-    Street = "Waldmannsweg 56",
-    State = "Niedersachsen",
+    Amenity = "restaurant",
+    City = "New York",
+    Country = "USA"
 });
 
 Console.WriteLine(JsonSerializer.Serialize(response));

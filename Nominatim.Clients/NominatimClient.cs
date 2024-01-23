@@ -52,7 +52,7 @@ namespace Nominatim.Clients
             return new RequestResponseModel
             {
                 Status = Status.Success,
-                ApiResponse = apiResponse?.Count > 0 ? apiResponse[0] : new ApiResponseModel()
+                ApiResponse = apiResponse ?? new List<ApiResponseModel>()
             };
         }
 
