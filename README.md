@@ -19,7 +19,7 @@ This client allows you to perform location-based searches using the Nominatim AP
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/NominatimClient.git
+git clone https://github.com/bartels-de/NominatimClient.git
 
 # Navigate to the project directory
 cd NominatimClient
